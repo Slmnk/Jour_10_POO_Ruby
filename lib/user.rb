@@ -15,6 +15,7 @@ class User
 
   def self.find_by_email(email)
     @@all_users.each {|user| return user if user.email == email}
+  else puts "aucun utilisateur n'a cet email"
   end
 
 end
